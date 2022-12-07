@@ -1,0 +1,250 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    overflow-x: hidden;
+    
+}
+
+html,body{
+    
+    background-color: #FFFBEB;
+    height: 100%;
+   
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+h1{
+    font-weight: 800;
+    color: #251749;
+    margin-right: 30px;
+    font-size: 38px;
+}
+
+.services-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/nice.svg);
+    background-repeat: no-repeat;
+}
+/* 
+button 
+*/
+:root {
+    --background-color: #000000;
+    --color: #000000;
+    --light-theme: #FFFBEB;
+  }
+  
+  
+  
+  .container-1, .container-2, .container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 100vh;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 260px;
+    height: 60px;
+    
+    background-color: var(--light-theme);
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--color);
+    transition: all 0.3s;
+    position: relative;
+  
+    text-align: center;
+    overflow: hidden;
+  
+    border-radius: 5px;
+    box-shadow: 0 6px 30px -10px rgba(#CCCCCC, 1);
+    
+    margin: 12px;
+    
+    
+  }
+  .btn:hover {
+    transform: translateX(5px) translateY(-7px);
+  }
+  
+  .shop-now {
+    position: relative;
+    
+  }
+  .santa-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -17px;
+    right: -20px;
+    transform: rotate(14deg);
+    
+  }
+  
+  .snowflake-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 5px;
+  
+    width: 100px;
+    transform: scale(0.4);
+    
+    
+   
+  }
+  
+  .to-left {
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    animation: swing 3s infinite;
+   
+  }
+  div {
+    animation: flash 3s infinite;
+  }
+  
+  .to-right {
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    animation: swing 2.5s infinite;
+    
+  }
+  div {
+    animation: flash 2.5s infinite;
+  }
+  
+  .border-left {
+    border-left: 4px solid #FFFBEB;
+    
+  }
+  
+  .border-right {
+    border-right: 4px solid #FFFBEB;
+  }
+  
+  .border-bottom {
+    border-bottom: 4px solid #FFFBEB;
+  }
+  
+  .border-top {
+    border-top: 4px solid #FFFBEB;
+  }
+  
+  .sub-items {
+    height: 28px;
+    width: 28px;
+  }
+  
+  .m-w-15 {
+    width: 15px;
+  }
+  
+  .m-h-15 {
+    height: 15px;
+  }
+  
+  .r-270 {
+    transform: rotate(270deg);
+  }
+  
+  .r-180 {
+    transform: rotate(180deg);
+  }
+  
+  .r-90 {
+    transform: rotate(90deg);
+  }
+  
+  .pull-down {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .pull-down-right {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .pull-right {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  
+  .pull-left {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  
+  .m-3 {
+    margin: 3px;
+  }
+  
+  @keyframes swing {
+    50% {
+      transform: rotateZ(10deg) scale(0.4);
+    }
+  }
+  
+  @keyframes flash {
+    50% {
+      border-color: #485563; 
+    }
+  }
+
+  @media (max-width: 768px){
+    .main-page{
+        flex-direction: column;
+       
+    }
+    h1{
+        font-size: 24px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    img{
+        height: 400px;
+    }
+    .services-page{
+        flex-direction: column;
+    }
+
+    .container-1, .container-2, .container-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        height: 50vh;
+      }
+  }
